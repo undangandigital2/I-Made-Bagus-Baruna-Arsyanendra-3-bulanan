@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Undangan 3 Bulanan - I Made Bagus Baruna Arsyanendra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #f5f5f5;
+      animation: fadeIn 1s ease-out;
+      body {
+     font-family: 'Glegoo', serif;
+}
+
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 30px auto;
+      background-color: #1a1a1a;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.1);
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .header {
+      text-align: center;
+    }
+
+    .header img {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 15px;
+      box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2);
+    }
+
+    .header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #ffd700;
+    }
+
+    .section {
+      margin-top: 30px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      text-align: center;
+      color: #f5d57c;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      text-align: center;
+      color: #e9e9e9;
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.15);
+    }
+
+    .footer-logo {
+  margin-top: 15px;
+  width: 80px;
+  height: auto;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5));
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+
+    form {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    form input, form button {
+      padding: 12px;
+      margin: 6px 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    form button {
+      background: #ffd700;
+      color: #1a1a1a;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background: #e5c100;
+    }
+
+    .countdown {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .countdown-item {
+      background-color: #2a2a2a;
+      border: 2px solid #ffd700;
+      border-radius: 15px;
+      padding: 20px;
+      color: #ffd700;
+      text-align: center;
+      margin: 10px;
+      width: 100px;
+      transition: transform 0.3s ease;
+    }
+
+    .countdown-item:hover {
+      transform: scale(1.05);
+    }
+
+    .countdown-number {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .countdown-label {
+      font-size: 0.9rem;
+      color: #f0f0f0;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .whatsapp-button {
+      background: #c2b589;
+      color: #fff;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .whatsapp-button:hover {
+      background: #3b3b36;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #bbbbbb;
+      border-top: 1px solid #444;
+      padding-top: 15px;
+    }
+
+    .footer {
+  background: linear-gradient(45deg, #111, #1e1e1e);
+  color: #fff;
+  padding: 30px 20px;
+  border-top: 2px solid #ffd700;
+  text-align: center;
+  font-family: 'Glegoo', serif;
+  box-shadow: inset 0 1px 0 rgba(255, 215, 0, 0.1);
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+.footer p {
+  margin: 5px 0;
+  color: #eee;
+  font-size: 0.95rem;
+}
+
+.footer .ornament {
+  width: 100px;
+  margin: 10px auto;
+  opacity: 0.8;
+}
+.batik-ornament {
+  position: fixed;
+  width: 160px;
+  z-index: 0;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.batik-ornament.top {
+  top: 0;
+  left: 0;
+}
+
+.batik-ornament.bottom {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+.footer {
+  background: linear-gradient(45deg, #111, #1e1e1e);
+  color: #fff;
+  padding: 30px 20px;
+  border-top: 3px double #ffd700;
+  border-image: url('batik-border-gold.png') 30 stretch;
+  border-image-slice: 30;
+  border-image-repeat: round;
+  text-align: center;
+  font-family: 'Glegoo', serif;
+  box-shadow: inset 0 1px 0 rgba(255, 215, 0, 0.1);
+}
+
+.batik-left-ornament {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100px; /* kecil dari sisi lebar */
+  height: auto; /* supaya proporsional */
+  z-index: 0;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+  </style>
+</head>
+<body>
+  <div id="intro" style="position:fixed;top:0;left:0;width:100%;height:100vh;background:#000;z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;color:#fff;font-family:'Playfair Display',serif;transition:opacity 0.6s ease; padding: 20px;">
+  
+  
+    <!-- Ornamen atas -->
+  <img src="batik-ornament-top.png.png" alt="Ornamen Atas" style="position:absolute;top:20px;left:50%;transform:translateX(-50%);width:100px;opacity:0.6;pointer-events:none;"/>
+
+  <h1 style="font-size:2.2rem;color:#f5deb3;margin-bottom:20px;">Om Swastyastu</h1>
+  <p style="font-size:1.1rem;margin:0 10px 30px;max-width:600px;line-height:1.6;">
+    Dengan penuh hormat, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri upacara 3 Bulanan (Telung Bulanan) putra kami tercinta.
+  </p>
+
+  <button onclick="openInvitation()" style="background:#f5deb3;color:#000;padding:12px 26px;border:none;border-radius:10px;font-size:1rem;font-weight:bold;cursor:pointer;transition:background 0.3s, transform 0.2s;">
+    Buka Undangan
+  </button>
+
+  <!-- Ornamen bawah -->
+  <img src="batik-ornament-top.png.png" alt="Ornamen Bawah" style="position:absolute;bottom:20px;right:50%;transform:translateX(50%) rotate(180deg);width:100px;opacity:0.6;pointer-events:none;"/>
+</div>
+
+
+
+
+
+  <!-- Tambahkan di dalam <body>, sebelum <div class="container"> -->
+<img src="batik-ornament-top.png.png" class="batik-ornament top" alt="Batik Bali Atas">
+<!-- Tambahkan setelah </div> penutup container -->
+<img src="batik-ornament-top.png.png" class="batik-ornament bottom" alt="Batik Bali Bawah">
+ <!-- Ornamen batik di sebelah kiri -->
+  <img src="pngtree-flower-batik-mandala-zentangle-png-image_4139197-removebg-preview.png" 
+       alt="Batik Ornament" class="batik-left-ornament" />
+
+<!-- Pemutar Musik -->
+<audio id="background-music" loop>
+  <source src="Cening Bagus _Galuh Liku Kartono Yasa dan Galuh manis Sunari Arja widiaksara Kamandani Dental..mp4" type="audio/mpeg">
+  Browser Anda tidak mendukung audio.
+</audio>
+
+<!-- Tombol Musik -->
+<div id="music-toggle" onclick="toggleMusic()" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #ffd700;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(255,215,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  transition: background 0.3s;
+">
+  <img id="music-icon" src="https://cdn-icons-png.flaticon.com/512/727/727245.png" alt="Play Music" style="width: 28px; height: 28px;" />
+</div>
+
+
+  <div class="container">
+    <div class="header">
+      <img src="foto paling atas.jpeg" alt="Foto Anak">
+      <h1>I Made Bagus Baruna Arsyanendra</h1>
+    </div>
+
+    <div class="section">
+      <h2>Om Swastyastu</h2>
+      <p>Dengan penuh rasa syukur ke hadapan Ida Sang Hyang Widhi Wasa, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam upacara Tiga bulanan (telung sasih) putra kami tercinta:</p>
+    </div>
+
+    <div class="section">
+      <h2>Hitung Mundur Acara</h2>
+      <div class="countdown" id="countdown">
+        <div class="countdown-item"><div class="countdown-number" id="days">0</div><div class="countdown-label">Hari</div></div>
+        <div class="countdown-item"><div class="countdown-number" id="hours">0</div><div class="countdown-label">Jam</div></div>
+        <div class="countdown-item"><div class="countdown-number" id="minutes">0</div><div class="countdown-label">Menit</div></div>
+        <div class="countdown-item"><div class="countdown-number" id="seconds">0</div><div class="countdown-label">Detik</div></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Galeri Foto</h2>
+      <div class="gallery">
+        <img src="WhatsApp Image 2025-05-27 at 15.22.40.jpeg" alt="Foto 1">
+        <img src="WhatsApp Image 2025-05-27 at 15.22.40(1).jpeg" alt="Foto 2">
+        <img src="WhatsApp Image 2025-05-27 at 15.22.41(1).jpeg" alt="Foto 3">
+        <img src="WhatsApp Image 2025-05-27 at 15.22.41.jpeg" alt="Foto 4">
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Waktu & Lokasi</h2>
+      <p>📅 Senin, 2 Juni 2025</p>
+      <p>🕒 15:00 – 18:00 WITA</p>
+      <p>📍 Banjar Selanbawak Kaja, Desa Selanbawak, Kecamatan Marga, Tabanan</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.7533962648127!2d115.1640837!3d-8.125067699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd213b18b90cdb7%3A0x9bb12b13d9d6d9c1!2sJl.%20Kekeran%2C%20Manikgunung%2C%20Kec.%20Selemadeg%20Timur%2C%20Kabupaten%20Tabanan%2C%20Bali!5e0!3m2!1sen!2sid!4v1716882534000!5m2!1sen!2sid" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="section">
+      <h2>Konfirmasi Kehadiran</h2>
+      <form>
+        <input type="text" placeholder="Nama Anda" required>
+        <input type="email" placeholder="Email" required>
+        <button type="submit">Konfirmasi</button>
+      </form>
+      <div class="button-container">
+        <a href="https://wa.me/6281934969168?text=Saya%20akan%20hadir%20pada%203%20bulanan%20putra%20Anda." target="_blank" class="whatsapp-button">
+  Konfirmasi via WhatsApp
+</a>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>🙏 Aturang suksma sareng rahayu 🙏</p>
+      <p>&copy; 2025 Undangan Keluarga Baruna Arsyanendra</p>
+      <img src="ChatGPT Image 29 Mei 2025, 02.13.02.png" alt="Logo Keluarga" class="footer-logo">
+
+    </div>
+  </div>
+
+  <script>
+    const countDownDate = new Date("2025-06-02T15:00:00+08:00").getTime();
+    const countdown = () => {
+      const now = new Date().getTime();
+      const distance = countDownDate - now;
+      if (distance < 0) {
+        document.getElementById("countdown").innerHTML = "Acara telah dimulai 🎉";
+        return;
+      }
+      const d = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const s = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("days").textContent = d;
+      document.getElementById("hours").textContent = h;
+      document.getElementById("minutes").textContent = m;
+      document.getElementById("seconds").textContent = s;
+    };
+    countdown();
+    setInterval(countdown, 1000);
+
+
+  </script>
+
+  <script>
+  function openInvitation() {
+    const intro = document.getElementById("intro");
+    intro.style.opacity = "0";
+    setTimeout(() => {
+      intro.style.display = "none";
+    }, 600);
+  }
+</script>
+<script>
+  const music = document.getElementById("background-music");
+  const musicIcon = document.getElementById("music-icon");
+  let isPlaying = false;
+
+  function toggleMusic() {
+    if (isPlaying) {
+      music.pause();
+      musicIcon.src = "https://cdn-icons-png.flaticon.com/512/727/727245.png"; // ikon play
+    } else {
+      music.play();
+      musicIcon.src = "https://cdn-icons-png.flaticon.com/512/727/727243.png"; // ikon pause
+    }
+    isPlaying = !isPlaying;
+  }
+
+  // Otomatis main saat user buka undangan (bisa disesuaikan sesuai browser policy)
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      music.play().then(() => {
+        isPlaying = true;
+        musicIcon.src = "https://cdn-icons-png.flaticon.com/512/727/727243.png";
+      }).catch(err => {
+        // Beberapa browser butuh interaksi dulu untuk play otomatis
+        console.log("Audio autoplay diblokir browser");
+      });
+    }, 1000);
+  });
+</script>
+
+</body>
+</html>
